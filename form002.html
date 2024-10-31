@@ -8,17 +8,19 @@
 <body>
     <h1>Teste de formulário</h1>   
     <form action="cadastro.php" method="post"></form>
-    <p>
-        <label for="iusu">Usuário:</label>
-        <input type="text" name="usu" id="iusu" required minlength="8">
-    </p>
-    <p>
-        <label for="isen">Senha:</label>
-    <input type="password" name="sen" id="isen" required minlength="10">
-</p>
+    <fieldset>
+        <legend>Cadastro obrigatório</legend>
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="10" placeholder="Min. 10 caracteres">
+        </p>
+    </fieldset><br>
     
     <input type="button" value="Enviar">
-    <input type="button" value="Limpar">
 
 </body>
 </html>
